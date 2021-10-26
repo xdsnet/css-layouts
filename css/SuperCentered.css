@@ -29,16 +29,7 @@
     resize: both;
     overflow: auto;
   }
-  .blue{
-    background: lightblue;
-  }
-  .yellow{
-    background:yellow;  
-  }
-  .purple{
-    background:purple; 
-  }
-  
+ 
   .box {
     padding: 0.5rem;
     border-radius: 10px;
@@ -48,6 +39,3 @@
     text-align: center;
   }
   
-  body {
-    font-family: system-ui, serif;
-  }

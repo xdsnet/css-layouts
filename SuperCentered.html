@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>
-            居中、起始、末尾对齐布局
-        </title>
-        <link rel='stylesheet' type='text/css' href="css/SuperCentered.css">
-    </head>
-    <body>
-        <p>利用css的grid显示特性，一句就可以实现居中（水平和垂直都居中）、起始（左上角）和末尾（右下角）对齐。</p>
-        <pre>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        居中、起始、末尾对齐布局
+    </title>
+    <link rel='stylesheet' type='text/css' href="css/all.css">
+    <link rel='stylesheet' type='text/css' href="css/SuperCentered.css">
+</head>
+
+<body>
+    <p>利用css的grid显示特性，一句就可以实现居中（水平和垂直都居中）、起始（左上角）和末尾（右下角）对齐。</p>
+    <pre>
             .mycenter {
                 display: grid;
                 place-items: center;
@@ -23,24 +26,25 @@
                 place-items: end;
             } 
         </pre>
-        <label>居中对齐</label>
-        <div class="mycenter blue">
-            <div class="box coral" contenteditable>
-                :)
-            </div>
+    <label>居中对齐</label>
+    <div class="mycenter blue">
+        <div class="box coral" contenteditable>
+            :)
         </div>
-        <label>起始对齐</label>
-        <div class="mystart purple">
-            <div class="box coral" contenteditable>
-                :)
-            </div>
+    </div>
+    <label>起始对齐</label>
+    <div class="mystart purple">
+        <div class="box coral" contenteditable>
+            :)
         </div>
-        <label>末尾对齐</label>
-        <div class="myend yellow">
-            <div class="box coral" contenteditable>
-                :)
-            </div>
+    </div>
+    <label>末尾对齐</label>
+    <div class="myend yellow">
+        <div class="box coral" contenteditable>
+            :)
         </div>
+    </div>
 
-    </body>
+</body>
+
 </html>
