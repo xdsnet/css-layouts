@@ -1,6 +1,6 @@
 .parent {
     display: grid;
-    height: 20vh;
+    height: 30vh;
     grid-template-columns: repeat(12, 1fr);
 }
   
