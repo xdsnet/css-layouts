@@ -10,3 +10,4 @@ css经典布局的实现记录
 * [居中、起始、末尾对齐布局](./SuperCentered.html)
 * [多栏并列布局](./TheDeconstructedPancake.html)
 * [两栏分区布局](./SidebarSays.html)
+* [上中下三明治布局](./PancakeStack.html)

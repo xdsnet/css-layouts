@@ -12,6 +12,20 @@
 
 <body>
     <p>利用css的flex显示特性，一句就可以实现多栏并列布局。</p>
+    <pre>
+     内容包装部分样式
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    内部并列栏目样式（可以和这里不同）
+    .item{
+        flex: 0 1 150px;
+        margin: 5px;
+     }
+    </pre>
     <div class="parent white">
         <div class="box green">1</div>
         <div class="box green">2</div>

@@ -12,15 +12,22 @@
 
 <body>
     <p>利用css的grid显示特性，一句就可以实现两栏分区布局。</p>
+    <pre>
+    外部包装样式    
+    .container {
+        display: grid;
+        grid-template-columns: minmax(150px, 25%) 1fr;
+    }
 
+    </pre>
     <div class="parent">
         <div class="section yellow" contenteditable>
-        小栏目部分: 150px / Max: 25%
+            小栏目部分: 150px / Max: 25%
         </div>
         <div class="section purple" contenteditable>
-          主要内容部分 (1fr), 会自动填充剩余区域。
+            主要内容部分 (1fr), 会自动填充剩余区域。
         </div>
-      </div>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,22 @@
+.parent {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 500px;
+  }
+
+
+  header {
+    background: lightpink;
+    padding: 1rem;
+  }
+  
+  main {
+    background: coral;
+    text-align: center;
+  }
+  
+  footer {
+    background: wheat;
+    padding: 1rem;
+    text-align: center;
+  }

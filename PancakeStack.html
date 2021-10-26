@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        上中下三明治布局
+    </title>
+    <link rel='stylesheet' type='text/css' href="css/all.css">
+    <link rel='stylesheet' type='text/css' href="css/PancakeStack.css">
+</head>
+
+<body>
+    <p>利用css的grid显示特性，一句就可以实现上中下三明治布局。三明治布局指的是，页面在垂直方向上，分成三部分：页眉、内容区、页脚。这个布局会根据设备宽度，自动适应，并且不管内容区有多少内容，页脚始终在容器底部（粘性页脚）。也就是说，这个布局总是会占满整个页面高度。
+    </p>
+    <pre>
+    外部包装样式    
+    .container {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+
+
+    </pre>
+    <div class="parent">
+        <header class="blue section" contenteditable>页眉</header>
+        <main class="coral section" contenteditable>内容区</main>
+        <footer class="purple section" contenteditable>页脚</footer>
+    </div>
+</body>
+
+</html>
