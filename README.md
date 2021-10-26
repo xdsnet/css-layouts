@@ -9,3 +9,4 @@ css经典布局的实现记录
 # 布局效果
 * [居中、起始、末尾对齐布局](./SuperCentered.html)
 * [多栏并列布局](./TheDeconstructedPancake.html)
+* [两栏分区布局](./SidebarSays.html)
