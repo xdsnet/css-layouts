@@ -1,0 +1,53 @@
+.mycenter {
+    display: grid;
+    place-items: center;
+    
+    width: 500px;
+    height: 500px;
+    
+    resize: both;
+    overflow: auto;
+  }
+  .mystart {
+    display: grid;
+    place-items: start;
+    
+    
+    width: 500px;
+    height: 500px;
+    
+    resize: both;
+    overflow: auto;
+  }
+  .myend {
+    display: grid;
+    place-items: end;
+
+    width: 500px;
+    height: 500px;
+    
+    resize: both;
+    overflow: auto;
+  }
+  .blue{
+    background: lightblue;
+  }
+  .yellow{
+    background:yellow;  
+  }
+  .purple{
+    background:purple; 
+  }
+  
+  .box {
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid red;
+    background: lightpink;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  body {
+    font-family: system-ui, serif;
+  }
