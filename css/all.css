@@ -14,6 +14,12 @@
   .green{
     background:lightgreen;
   }
+  .coral{
+    background:coral;  
+  }
+  .pink{
+    background:pink;  
+  }
 
   body {
     font-family: system-ui, serif;

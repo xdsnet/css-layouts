@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        圣杯布局
+    </title>
+    <link rel='stylesheet' type='text/css' href="css/all.css">
+    <link rel='stylesheet' type='text/css' href="css/ClassicHolyGrail.css">
+</head>
+
+<body>
+    <p>利用css的grid显示特性，实现圣杯布局（页眉、中栏、页脚，其中中栏又分左边栏，中间主要内容，右边栏）。</p>
+    <pre>
+     内容包装部分样式（实现页面、中、页脚）
+.parent {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+}
+  
+header {
+    grid-column: 1 / 4;
+}
+.left-side {
+    grid-column: 1 / 2;
+}
+main {
+    grid-column: 2 / 3;
+}
+
+ .right-side {
+    grid-column: 3 / 4;
+}
+
+footer {
+    grid-column: 1 / 4;
+}
+    </pre>
+
+    <div class="parent">
+        <header class="pink">页眉</header>
+        <div class="left-side blue" contenteditable>左边栏</div>
+        <main class="coral" contenteditable>主要内容</main>
+        <div class="right-side yellow" contenteditable>右边栏</div>
+        <footer class="green">页脚</footer>
+      </div>
+</body>
+</html>
