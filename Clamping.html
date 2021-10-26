@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        自定义紧扣风格
+    </title>
+    <link rel='stylesheet' type='text/css' href="css/all.css">
+    <link rel='stylesheet' type='text/css' href="css/Clamping.css">
+</head>
+
+<body>
+    <p>利用css的grid显示特性，实现自定义紧扣风格。</p>
+    <pre>
+    外部包装样式 
+    .parent {
+        display: grid;
+        place-items: center;
+    }
+    
+    .card {
+        width: clamp(23ch, 50%, 46ch);
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .visual {
+          height: 125px;
+          width: 100%;
+    }
+    </pre>
+    <div class="parent white">
+        <div class="card pink">
+            <h1>Title Here</h1>
+            <div class="visual yellow"></div>
+            <p>比较长的描述内容。不同于短的内容，这些内容可以比较长的。</p>
+        </div>
+    </div>
+</body>
+
+</html>
