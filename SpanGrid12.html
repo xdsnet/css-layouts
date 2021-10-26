@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        12列网格布局模板
+    </title>
+    <link rel='stylesheet' type='text/css' href="css/all.css">
+    <link rel='stylesheet' type='text/css' href="css/SpanGrid12.css">
+</head>
+
+<body>
+    <p>利用css的grid显示特性，实现12列网格布局模板。</p>
+    <pre>
+    外部包装样式    
+.parent {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+}     
+.span-12 {
+    grid-column: 1 / span 12;
+}
+.span-11 {
+    grid-column: 1 / span 11;
+}
+.span-10 {
+    grid-column: 1 / span 10;
+}
+.span-9 {
+    grid-column: 1 / span 9;
+}
+.span-8 {
+    grid-column: 1 / span 8;
+}
+.span-7 {
+    grid-column: 1 / span 7;
+}
+.span-6 {
+    grid-column: 1 / span 6;
+}
+.span-5 {
+    grid-column: 1 / span 5;
+}
+
+.span-4 {
+    grid-column: 4 / span 4;
+}
+.span-3 {
+    grid-column: 1 / span 3;
+}
+.span-2 {
+    grid-column: 3 / span 2;
+}
+.span-1 {
+    grid-column: 1 / span 1;
+}
+ </pre>
+    <div class="parent purple">
+        <div class="span-12 green section">Span 12</div>
+        <div class="span-11 blue section">Span 11</div>
+        <div class="span-10 coral section">Span 10</div>
+        <div class="span-9 yellow section">Span 9</div>
+        <div class="span-8 green section">Span 8</div>
+        <div class="span-7 blue section">Span 7</div>
+        <div class="span-6 coral section">Span 6</div>
+        <div class="span-5 yellow section">Span 5</div>
+        <div class="span-4 green section">Span 4</div>
+        <div class="span-3 blue section">Span 3</div>
+        <div class="span-2 coral section">Span 2</div>
+        <div class="span-1 yellow section">Span 1</div>
+    </div>
+</body>
+
+</html>
