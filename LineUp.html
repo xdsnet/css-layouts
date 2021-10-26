@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        多并列卡片布局
+    </title>
+    <link rel='stylesheet' type='text/css' href="css/all.css">
+    <link rel='stylesheet' type='text/css' href="css/LineUp.css">
+</head>
+
+<body>
+    <p>利用css的grid和flex显示特性，实现多并列卡片布局。</p>
+    <pre>
+    外部包装样式
+    .parent {
+        height: auto;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .visual {
+        height: 100px;
+        width: 100%;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        justify-content: space-between;
+    }
+    
+    h3 {
+        margin: 0
+    }   
+    </pre>
+    <div class="parent white">
+        <div class="card yellow">
+          <h3>标题 - 卡片 1</h3>
+          <p contenteditable>一些描述内容.</p>
+          <div class="visual pink"></div>
+        </div>
+        <div class="card yellow">
+          <h3>标题 - 卡片 2</h3>
+          <p contenteditable>比较长的描述内容。不同于短的内容，这些内容比较长的。</p>
+          <div class="visual blue"></div>
+        </div>
+        <div class="card yellow">
+          <h3>标题 - 卡片 3</h3>
+          <p contenteditable>短的描述内容.</p>
+          <div class="visual green"></div>
+        </div>
+      </div> 
+
+    </body>
+</html>

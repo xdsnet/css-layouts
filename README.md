@@ -14,3 +14,4 @@ css经典布局的实现记录
 * [圣杯布局](./ClassicHolyGrail.html)
 * [12列网格布局模板](./SpanGrid12.html)
 * [子元素有最小宽度的多栏并列布局](./RAM.html)
+* [多并列卡片布局](./LineUp.html)
